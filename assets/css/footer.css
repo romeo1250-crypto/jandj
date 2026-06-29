@@ -1,0 +1,86 @@
+/* ===== FOOTER ===== */
+.footer {
+    background: #0f0f1a !important;
+    color: #ccc;
+    padding: 50px 0 20px;
+    border-top: 3px solid #ffc107;
+}
+
+.footer h5, .footer h6 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.footer p, .footer li {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.footer a {
+    color: #aaa;
+    transition: color 0.25s, padding-left 0.25s;
+    display: inline-block;
+}
+
+.footer a:hover {
+    color: #ffc107;
+    padding-left: 4px;
+    text-decoration: none !important;
+}
+
+/* Social media icons */
+.footer .fa-facebook-f,
+.footer .fa-twitter,
+.footer .fa-linkedin-in,
+.footer .fa-instagram,
+.footer .fa-whatsapp,
+.footer .fa-tiktok {
+    width: 28px;
+    text-align: center;
+    color: #aaa;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer .fa-facebook-f:hover,
+.footer .fa-twitter:hover,
+.footer .fa-linkedin-in:hover
+.footer .fa-instagram:hover,
+.footer .fa-whatsapp:hover,
+.footer .fa-tiktok:hover{
+    color: #ffc107;
+    transform: translateY(-2px);
+}
+
+/* Contact icons */
+.footer .fas {
+    width: 24px;
+    color: #ffc107;
+}
+
+/* Divider */
+.footer hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 30px 0 20px;
+}
+
+/* Copyright */
+.footer .text-center.small {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+        padding: 30px 0 15px;
+    }
+    .footer .col-md-3, .footer .col-md-6 {
+        margin-bottom: 25px;
+    }
+    .footer .fas {
+        width: 20px;
+    }
+}

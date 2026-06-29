@@ -1,0 +1,117 @@
+/* ===== INDEX PAGE STYLES ===== */
+
+/* Hero carousel */
+.hero-carousel {
+    margin-bottom: 0;
+}
+
+.hero-slide {
+    height: 80vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.hero-content h1, .hero-content h2 {
+    font-weight: 800;
+}
+.hero-content .btn {
+    border-radius: 50px;
+    padding: 12px 30px;
+}
+
+/* Stats bar */
+.stats-bar h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.stats-bar p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Services preview */
+.service-icon {
+    font-size: 3rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+/* Gallery */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+    font-size: 2.5rem;
+}
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Lightbox modal */
+#galleryModal .modal-body {
+    padding: 0;
+}
+#galleryModal .modal-body img,
+#galleryModal .modal-body iframe {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+#galleryModal .modal-body iframe {
+    aspect-ratio: 16 / 9;
+}
+#galleryModalTitle {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-slide {
+        height: 60vh;
+        min-height: 300px;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    .stats-bar h3 {
+        font-size: 1.8rem;
+    }
+    .gallery-item img {
+        height: 150px;
+    }
+}

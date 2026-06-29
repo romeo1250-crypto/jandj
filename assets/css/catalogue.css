@@ -1,0 +1,45 @@
+/* ===== CATALOGUE PAGE ===== */
+
+.product-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+}
+.product-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.product-item .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Quick View button */
+.quick-view {
+    transition: all 0.2s;
+}
+.quick-view:hover {
+    background: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+/* Search/filter bar */
+#searchInput:focus, #categoryFilter:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+/* No products message */
+#productGrid .col p {
+    padding: 40px 0;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .product-item .card-img-top {
+        height: 160px;
+    }
+}
